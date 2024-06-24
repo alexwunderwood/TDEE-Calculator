@@ -1,12 +1,5 @@
 import streamlit as st
 
-st.title("""Welcome to my TDEE calculator!
-
-
-
-
-""")
-
 def tdee(sex, weight, height, age, activity_level):
     if activity_level == "sedentary":
         activity = 1.2
@@ -32,6 +25,13 @@ def tdee(sex, weight, height, age, activity_level):
     return round(tdee_result)
 
 # Streamlit user inputs
+st.sidebar.title("""
+
+Welcome to my TDEE calculator!
+
+
+
+""")
 st.sidebar.header('Enter your info below to find out how many calories your body burns per day.')
 
 sex = st.sidebar.selectbox('Sex', ('male', 'female'))
@@ -48,4 +48,4 @@ tdee_result = tdee(sex, weight, height, age, activity_level)
 if isinstance(tdee_result, str):
     (tdee_result)
 else:
-    (f'You burn :blue[{tdee_result}] calories per day.')
+    st.title.(f'You burn :blue[{tdee_result}] calories per day.')

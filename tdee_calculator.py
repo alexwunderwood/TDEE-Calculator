@@ -44,6 +44,6 @@ tdee_result = tdee(sex, weight, height, age, activity_level)
 
 # Display result
 if isinstance(tdee_result, str):
-    st.error(tdee_result)
+    (tdee_result)
 else:
-    st.success(f'You burn :blue[{tdee_result}] calories per day.')
+    (f'You burn :blue[{tdee_result}] calories per day.')

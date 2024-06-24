@@ -48,4 +48,4 @@ tdee_result = tdee(sex, weight, height, age, activity_level)
 if isinstance(tdee_result, str):
     (tdee_result)
 else:
-    st.title.(f'You burn :blue[{tdee_result}] calories per day.')
+    (st.title.f'You burn :blue[{tdee_result}] calories per day.')

@@ -27,7 +27,7 @@ def tdee(sex, weight, height, age, activity_level):
 # Streamlit user inputs
 st.sidebar.title("""
 
-Welcome to my TDEE calculator!
+:green[Welcome to my TDEE calculator!]
 
 
 

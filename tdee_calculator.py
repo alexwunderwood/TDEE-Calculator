@@ -1,9 +1,9 @@
 import streamlit as st
 
-"""
+st.title("""
 # Welcome to my TDEE calculator!
 
-"""
+""")
 
 def tdee(sex, weight, height, age, activity_level):
     if activity_level == "sedentary":

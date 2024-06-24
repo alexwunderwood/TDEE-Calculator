@@ -46,6 +46,6 @@ tdee_result = tdee(sex, weight, height, age, activity_level)
 
 # Display result
 if isinstance(tdee_result, str):
-    (tdee_result)
+    st.popover.title(tdee_result)
 else:
-    (f'You burn :blue[{tdee_result}] calories per day.')
+    st.popover.title(f'You burn :blue[{tdee_result}] calories per day.')

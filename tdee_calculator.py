@@ -30,7 +30,7 @@ def tdee(sex, weight, height, age, activity_level):
     return round(tdee_result)
 
 # Streamlit user inputs
-st.sidebar.header('User Input Parameters')
+st.sidebar.header('Enter your info below to find out how many calories your body burns per day.')
 
 sex = st.sidebar.selectbox('Sex', ('male', 'female'))
 weight = st.sidebar.number_input('Weight (lbs)', min_value=0, value=150)
